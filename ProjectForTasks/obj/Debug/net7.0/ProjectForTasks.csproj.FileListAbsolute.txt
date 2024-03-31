@@ -1,0 +1,15 @@
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/bin/Debug/net7.0/ProjectForTasks
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/bin/Debug/net7.0/ProjectForTasks.deps.json
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/bin/Debug/net7.0/ProjectForTasks.runtimeconfig.json
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/bin/Debug/net7.0/ProjectForTasks.dll
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/bin/Debug/net7.0/ProjectForTasks.pdb
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.csproj.AssemblyReference.cache
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.AssemblyInfoInputs.cache
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.AssemblyInfo.cs
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.csproj.CoreCompileInputs.cache
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.dll
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/refint/ProjectForTasks.dll
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.pdb
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ProjectForTasks.genruntimeconfig.cache
+/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/Debug/net7.0/ref/ProjectForTasks.dll
