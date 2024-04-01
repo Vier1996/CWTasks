@@ -9,7 +9,7 @@ public class MainBootstrapper : IBootstrapper
     
     public void Bootstrapp()
     {
-        _codewarsTask = new Task_SimplePigLatin();
+        _codewarsTask = new Task_Snail();
         _codewarsTask.Bootstrapp();
     }
 
