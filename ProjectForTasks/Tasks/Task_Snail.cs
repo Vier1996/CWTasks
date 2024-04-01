@@ -1,3 +1,5 @@
+using ProjectForTasks.Analyzer;
+
 namespace ProjectForTasks.Tasks;
 
 public class Task_Snail : AbstractTask
@@ -12,10 +14,56 @@ public class Task_Snail : AbstractTask
             new []{7, 8, 9, 7, 4},
             new []{7, 8, 9, 7, 5}
         };
+        
+        ExecutionWatcher.Start();
+        Snail1(array);
+        //Snail(array);
+        //Snail(array, 0);
+        ExecutionWatcher.Stop();
 
-        Snail(array);
+        ExecutionWatcher.GetInfo();
     }
     
+    // Clever from CodeWars
+    public static IEnumerable<int> Snail(int[][] a, int r = 0)
+    {
+        int n = a[0].Length - 1 - 2 * r;
+        if (n < 0) return new int[0];
+        if (n == 0) return new []{a[r][r]};
+      
+        var sides = new []{
+                a[r],                             // Top
+                a.Select(x => x[r+n]),            // Right
+                a[r+n].Reverse(),                 // Bottom
+                a.Select(x => x[r]).Reverse()     // Left
+            }
+            .SelectMany(x => x.Skip(r).Take(n));
+ 
+        return (n == 1) ? sides : sides.Concat(Snail(a, r+1));
+    }
+    
+    public static int[] Snail1(int[][] array)
+    {
+        int l = array[0].Length;
+        int[] sorted = new int[l * l];
+        Snail(array, -1, 0, 1, 0, l, 0, sorted);
+        return sorted;
+    }
+
+    public static void Snail(int[][] array, int x, int y, int dx, int dy, int l, int i, int[] sorted)
+    {
+        if (l == 0)return;
+        
+        for (int j = 0; j < l; j++)
+        {
+            x += dx;
+            y += dy;
+            sorted[i++] = array[y][x];
+        }
+        Snail(array, x, y, -dy, dx, dy == 0 ? l - 1 : l, i, sorted);
+    }
+    
+    //
     public static int[] Snail(int[][] array)
     {
         Direction direction = Direction.right;
