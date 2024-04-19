@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/ProjectForTasks.csproj": {}
+    "D:\\RidderProjects\\CWTasks\\ProjectForTasks\\ProjectForTasks.csproj": {}
   },
   "projects": {
-    "/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/ProjectForTasks.csproj": {
+    "D:\\RidderProjects\\CWTasks\\ProjectForTasks\\ProjectForTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/ProjectForTasks.csproj",
+        "projectUniqueName": "D:\\RidderProjects\\CWTasks\\ProjectForTasks\\ProjectForTasks.csproj",
         "projectName": "ProjectForTasks",
-        "projectPath": "/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/ProjectForTasks.csproj",
-        "packagesPath": "/Users/maksimprilipko/.nuget/packages/",
-        "outputPath": "/Users/maksimprilipko/RiderProjects/ProjectForTasks/ProjectForTasks/obj/",
+        "projectPath": "D:\\RidderProjects\\CWTasks\\ProjectForTasks\\ProjectForTasks.csproj",
+        "packagesPath": "C:\\Users\\Vier\\.nuget\\packages\\",
+        "outputPath": "D:\\RidderProjects\\CWTasks\\ProjectForTasks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maksimprilipko/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Vier\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/maksimprilipko/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

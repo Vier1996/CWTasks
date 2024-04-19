@@ -1,5 +1,6 @@
 using System.Text;
 using ProjectForTasks.Analyzer;
+using ProjectForTasks.Bootstrapp.Interfaces;
 
 namespace ProjectForTasks.Tasks
 {
@@ -12,25 +13,26 @@ namespace ProjectForTasks.Tasks
     
     public class Task_SimplePigLatin : AbstractTask
     {
+        private string _inputString = "Ba kjasdh lq wk di qon dqjkn lqskdjh djs jlqsdj lqsjdlj dj lsajdlj qlsd !";
+        
         public override void Execute()
         {
             ExecutionWatcher.Start();
-            
-            string answer = PigItShort("Pig latin is cool !");
-
+            PigIt(_inputString);
             ExecutionWatcher.Stop();
             ExecutionWatcher.GetInfo();
             
-            Console.WriteLine(answer);
+            //Console.WriteLine(answer);
         }
         
         private string PigIt(string str)
         {
-            StringBuilder builder = new StringBuilder();
-            List<string> separatedWords = str.Split(' ').ToList();
+            StringBuilder builder = new StringBuilder(capacity: (int)(str.Length * 1.25f));
+            Span<string> separatedWords = str.Split(' ');
+            
             string specSymbols = "!";
 
-            for (int i = 0; i < separatedWords.Count; i++)
+            for (int i = 0; i < separatedWords.Length; i++)
             {
                 string word = separatedWords[i];
 
@@ -50,7 +52,7 @@ namespace ProjectForTasks.Tasks
                     .Append(' ');
             }
             
-            return builder.ToString().Substring(0, builder.Length - 1);
+            return builder.Remove(builder.Length - 1, 1).ToString();
         }
 
         private string PigItShort(string str)
